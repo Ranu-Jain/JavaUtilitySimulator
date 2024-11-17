@@ -1,0 +1,14 @@
+2024-11-17 07:29:29 [main] TRACE c.s.epay.java.utility.simulator.Main  - userId= - correlationId= - In Trace
+2024-11-17 07:29:29 [main] DEBUG c.s.epay.java.utility.simulator.Main  - userId= - correlationId= - In Debug
+2024-11-17 07:29:29 [main] ERROR c.s.epay.java.utility.simulator.Main  - userId= - correlationId= - In Error
+2024-11-17 07:29:29 [main] INFO  c.s.epay.java.utility.simulator.Main  - userId= - correlationId= - In Info
+2024-11-17 07:29:29 [main] WARN  c.s.epay.java.utility.simulator.Main  - userId= - correlationId= - In Warning
+2024-11-17 23:29:26 [main] DEBUG c.s.e.e.service.KeyGeneratorService  - userId= - correlationId= - KeyGeneratorService :: generateKey size 128
+2024-11-17 23:29:26 [main] INFO  c.s.e.e.service.EncryptionService  - userId= - correlationId= - EncryptionService :: encrypt  key : javax.crypto.spec.SecretKeySpec@fffe8064, value : {name : Ranu}, algorithm : AES_GCM_NO_PADDING, gcmIvLength : STANDARD, gcmTagLength : STANDARD
+2024-11-17 23:29:26 [main] INFO  c.s.e.e.service.DecryptionService  - userId= - correlationId= - DecryptionService :: decSecretKeyWithOtherSecretKey  start
+2024-11-17 23:29:26 [main] INFO  c.s.e.e.service.DecryptionService  - userId= - correlationId= - DecryptionService :: decSecretKeyWithOtherSecretKey  end
+2024-11-17 23:29:37 [main] TRACE c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Trace
+2024-11-17 23:29:37 [main] DEBUG c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Debug
+2024-11-17 23:29:37 [main] ERROR c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Error
+2024-11-17 23:29:37 [main] INFO  c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Info
+2024-11-17 23:29:37 [main] WARN  c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Warning
