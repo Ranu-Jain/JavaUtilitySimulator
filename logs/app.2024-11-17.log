@@ -12,3 +12,19 @@
 2024-11-17 23:29:37 [main] ERROR c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Error
 2024-11-17 23:29:37 [main] INFO  c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Info
 2024-11-17 23:29:37 [main] WARN  c.s.e.j.u.simulator.LoggingService  - userId= - correlationId= - In Warning
+2024-11-17 23:51:21 [main] DEBUG c.s.e.e.service.KeyGeneratorService  - userId= - correlationId= - KeyGeneratorService :: generateKey size 128
+2024-11-17 23:51:21 [main] INFO  c.s.e.e.service.EncryptionService  - userId= - correlationId= - EncryptionService :: encrypt  key : javax.crypto.spec.SecretKeySpec@179e8, value : {name : Ranu}, algorithm : AES_GCM_NO_PADDING, gcmIvLength : MAXIMUM, gcmTagLength : STANDARD
+2024-11-17 23:51:21 [main] INFO  c.s.e.e.service.DecryptionService  - userId= - correlationId= - DecryptionService :: decSecretKeyWithOtherSecretKey  start
+2024-11-17 23:51:21 [main] INFO  c.s.e.e.service.DecryptionService  - userId= - correlationId= - DecryptionService :: decSecretKeyWithOtherSecretKey  end
+2024-11-17 23:51:50 [main] DEBUG c.s.e.e.service.KeyGeneratorService  - userId= - correlationId= - KeyGeneratorService :: generateKey size 1
+2024-11-17 23:51:50 [main] ERROR c.s.e.e.service.KeyGeneratorService  - userId= - correlationId= - KeyGeneratorService :: getSecretKey 
+java.security.InvalidParameterException: Wrong keysize: must be equal to 128, 192 or 256
+	at java.base/com.sun.crypto.provider.AESKeyGenerator.engineInit(AESKeyGenerator.java:95)
+	at java.base/javax.crypto.KeyGenerator.init(KeyGenerator.java:535)
+	at com.sbi.epay.encryptdecrypt.service.KeyGeneratorService.getSecretKey(KeyGeneratorService.java:68)
+	at com.sbi.epay.encryptdecrypt.service.KeyGeneratorService.generateKeyByDefaultAlgo(KeyGeneratorService.java:41)
+	at com.sbi.epay.java.utility.simulator.EncryptionDecryptionService.main(EncryptionDecryptionService.java:20)
+2024-11-17 23:52:13 [main] DEBUG c.s.e.e.service.KeyGeneratorService  - userId= - correlationId= - KeyGeneratorService :: generateKey size 192
+2024-11-17 23:52:14 [main] INFO  c.s.e.e.service.EncryptionService  - userId= - correlationId= - EncryptionService :: encrypt  key : javax.crypto.spec.SecretKeySpec@fffe9db9, value : {name : Ranu}, algorithm : AES_GCM_NO_PADDING, gcmIvLength : MAXIMUM, gcmTagLength : STANDARD
+2024-11-17 23:52:14 [main] INFO  c.s.e.e.service.DecryptionService  - userId= - correlationId= - DecryptionService :: decSecretKeyWithOtherSecretKey  start
+2024-11-17 23:52:14 [main] INFO  c.s.e.e.service.DecryptionService  - userId= - correlationId= - DecryptionService :: decSecretKeyWithOtherSecretKey  end
